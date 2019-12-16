@@ -8,7 +8,9 @@ const PORT = 9000
 // MIDDLEWARE
 app.use(express.json())
 
-
+app.get('/', (req, res)=>{
+  res.send('Hello from index.js')
+})
 
 
 app.listen(PORT, ()=>{
