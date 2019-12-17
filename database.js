@@ -3,9 +3,9 @@ let sqlite3 = require('sqlite3')
 let database = new sqlite3.Database('./database.db')
 
 const createClientTableQuery = `CREATE TABLE IF NOT EXISTS clients (
-first_name TEXT,
-last_name TEXT,
+full_name TEXT,
 email TEXT,
+topic_of_interest TEXT,
 zip INTEGER)`
 
 database.run(createClientTableQuery, err=>{
